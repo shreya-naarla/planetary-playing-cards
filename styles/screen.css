@@ -1,3 +1,8 @@
+:root {
+    --light-planet-color: rgb(255, 255, 255);
+    --sun-color: #dce308;
+}
+
 body {
     background: #012a4a;
     color: #a9d6e5;
@@ -20,6 +25,11 @@ main {
     border-radius: 10px;
     justify-content: center;
     align-content: center;
+    filter: opacity(0.7);
+}
+
+.module:hover {
+    filter: opacity(1);
 }
 
 .module.sun {
@@ -30,10 +40,70 @@ main {
     align-self: center;
 }   
 
-.sun-image {
-    width: 300px;
-}
 
 .circle {
-    border-radius: 100px;
+    border-radius: 50%;
+}
+
+.circle.sun {
+    height: 200px;
+    width: 200px;
+    margin-left: 100px;
+    background: #dce308;
+}
+
+.circle.mercury {
+    height: 60px;
+    width: 60px;
+    margin-left: 70px;
+    background: linear-gradient(45deg, var(--sun-color) 0%, rgb(45, 121, 253) 100%);
+}
+
+.circle.venus {
+    height: 70px;
+    width: 70px;
+    margin-left: 65px;
+    background: linear-gradient(45deg, var(--sun-color) 0%, rgb(133, 119, 13) 100%);
+}
+
+.circle.earth {
+    height: 80px;
+    width: 80px;
+    margin-left: 60px;
+    background: linear-gradient(45deg, rgb(42, 22, 221) 0%, rgb(14, 134, 38) 100%);
+}
+
+.circle.mars {
+    height: 70px;
+    width: 70px;
+    margin-left: 65px;
+    background: linear-gradient(45deg, rgb(136, 14, 14) 0%, rgb(136, 77, 14) 100%);
+}
+
+.circle.jupiter {
+    height: 90px;
+    width: 90px;
+    margin-left: 55px;
+    background: linear-gradient(45deg, rgb(136, 77, 14) 0%, var(--light-planet-color) 100%);
+}
+
+.circle.saturn {
+    height: 100px;
+    width: 100px;
+    margin-left: 50px;
+    background: linear-gradient(45deg, var(--light-planet-color) 0%, rgb(111, 64, 15) 100%);
+}
+
+.circle.uranus {
+    height: 90px;
+    width: 90px;
+    margin-left: 55px;
+    background: linear-gradient(45deg, rgb(14, 97, 136) 0%, var(--light-planet-color) 100%);
+}
+
+.circle.neptune {
+    height: 80px;
+    width: 80px;
+    margin-left: 60px;
+    background: linear-gradient(45deg, var(--light-planet-color) 0%, rgb(11, 74, 103) 100%);
 }
