@@ -3,11 +3,7 @@ layout: layout.liquid
 title: Planetary Playing Cards
 ---
 
-<script>
-    ScrollReveal().reveal('.module', { interval: 600 });
-</script>
-
-<h1>Planetary Playing Cards</h1>
+<h1 class="title">Planetary Playing Cards</h1>
 
 <main>
     <div class="module sun">
@@ -48,7 +44,7 @@ title: Planetary Playing Cards
     <div class="module uranus">
         <div class="circle uranus"></div>
         <h3>Uranus</h3>
-        <h4>19.2 AU</h4>
+        <h4>19.20 AU</h4>
     </div>
     <div class="module neptune">
         <div class="circle neptune"></div>
@@ -56,3 +52,7 @@ title: Planetary Playing Cards
         <h4>30.06 AU</h4>
     </div>
 </main>
+
+<script>
+    ScrollReveal().reveal('.module', { interval: 200, delay: 200});
+</script>
